@@ -1,3 +1,29 @@
+def pickingNumbers(a):
+    # Write your code here
+    max_count = 0
+    for k in range(len(a)):
+        count1 = 1
+        count2 = 1
+        last_val = a[k]
+        for i in range(k+1,len(a)): 
+            
+            if(last_val-a[i] == 1):
+                print(f"{last_val}-{a[i]}",end="\n")
+                count1+=1
+                #last_val = a[i]
+            if(last_val-a[i] == -1):
+                print(f"{last_val}-{a[i]}",end="\n")
+                count2+=1
+            if(last_val-a[i] == 0):
+                print(f"{last_val}-{a[i]}",end="\n")
+                count2+=1
+                count1+=1
+        
+        if (count1 > max_count):
+            max_count = count1
+        if (count2 > max_count):
+            max_count = count2
+    return max_count
 
 def pickingNumbers(a):
     # Write your code here
