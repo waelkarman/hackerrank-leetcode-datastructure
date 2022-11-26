@@ -48,4 +48,40 @@ def climbingLeaderboard(ranked, player):
     #    scores.append(score)
     #return scores
 
-
+   #def climbingLeaderboard(ranked, player):
+#    # Write your code here
+#
+#    results = []
+#    first = True
+#    
+#    #player = [5]
+#    for p in player:    
+#        temp = 0
+#        count = 1
+#        for s in ranked:
+#            #print(f"---p : {p}  and r : {s}   and count : {count}, temp : {temp}, count : {count}")
+#            if( p<s ):
+#                if( s != temp ):
+#                    count += 1
+#                    temp = s
+#                first = False
+#            else:
+#                #print(f"---p : {p}  and r : {s}  ")
+#                if(first):
+#                    first = False
+#                    results.append(1)
+#                    #print("APPENDED0")
+#                    temp = s
+#                    break
+#                else:
+#                    results.append(count)
+#                    #print("APPENDED1")
+#                    temp = s
+#                    break
+#            
+#        if( p<ranked[len(ranked)-1] ):
+#            results.append(count)
+#            
+#        
+#    return results
+#     
