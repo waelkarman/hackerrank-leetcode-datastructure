@@ -29,6 +29,7 @@ def climbingLeaderboard(ranked, player):
     scores.reverse()            
     return scores
 
+#def climbingLeaderboard(ranked, player):
     #scores = []
     #back_a = None
     #first = True
