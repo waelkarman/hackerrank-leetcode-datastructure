@@ -1,3 +1,6 @@
+
+# To Optimize computaional complexity too high
+
 def stringAnagram(dictionary, query):
     # Write your code here   
         
