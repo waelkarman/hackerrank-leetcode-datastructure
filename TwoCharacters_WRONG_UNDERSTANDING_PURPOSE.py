@@ -1,3 +1,4 @@
+#finds longest alternating sequence
 def alternate(s):
     # Write your code here
     max_count = 0 
