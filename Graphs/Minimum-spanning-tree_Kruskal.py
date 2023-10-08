@@ -32,11 +32,10 @@ def kruskal(g,first):
     print(orderedEdges)
 
     k=0
-    while k < len(g.keys())-1:
-        k+=1
-        print(f"k:{5}")
-        node = orderedEdges.pop(0)
+    while k < len(orderedEdges):
 
+        node = orderedEdges.pop(0)
+        # avoid cycles
         if node[1] not in mts:
             mts[node[1]]=[[node[2],node[0]]]
         else:
@@ -46,6 +45,7 @@ def kruskal(g,first):
             mts[node[2]]=[[node[1],node[0]]]
         else:
             mts[node[2]].append([node[1],node[0]])
+        k+=1
         
     print(mts)
 
