@@ -1,4 +1,4 @@
-
+#   SINGLE SOURCE MULTIPLE PATH
 # using a priority queue based on heap improve the selection of the next node to relax
 
 def Dijkstra(g,next):
