@@ -10,7 +10,7 @@ g = {
 
 # by using a priority queue the algorithm could be improved 
 # having a graph defined as edge list could speed up the algorithm 
-def kruskal(g,first):
+def kruskal(g):
     orderedEdges = []
     mts = {}
     
@@ -49,6 +49,6 @@ def kruskal(g,first):
         
     print(mts)
 
-kruskal(g,1)
+kruskal(g)
 
 
