@@ -9,7 +9,7 @@ def gridwalker(n,m,cache={}):
     if n == 1 and m == 1:
         return 1
     
-    cache[(n,m)] = gridwalker(n-1,m) + gridwalker(n,m-1)
+    cache[(n,m)] = gridwalker(n-1,m,cache) + gridwalker(n,m-1,cache)
     return cache[(n,m)]
 
 
