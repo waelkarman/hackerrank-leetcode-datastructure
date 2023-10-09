@@ -12,4 +12,4 @@ def fibonacci(n,cache={}):
 print(fibonacci(4))
 print(fibonacci(6))
 print(fibonacci(7))
-print(fibonacci(300)) 
+print(fibonacci(300)) # Not critical anymore
