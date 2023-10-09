@@ -1,4 +1,7 @@
 
+
+# PRIM ALGORITHM DIRTY SOLUTION
+
 g = {
     1:{2:2,5:7,3:8},
     2:{1:2,3:5,4:7},
