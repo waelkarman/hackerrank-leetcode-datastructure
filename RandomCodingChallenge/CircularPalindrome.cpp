@@ -37,7 +37,7 @@ vector<int> circularPalindromes(string s) {
             size_t p = tmpstr.size();
             while(j<p){
                 if(tmpstr[j]==tmpstr[p]){
-                    //MIGHT DEFINE A PALINDROME
+                    //MIGHT BE PALINDROME
                     string substr = tmpstr.substr(j, p-j+1);
                     if(checkPalindrome(substr)){
                         if(substr.size()>maxsize)
