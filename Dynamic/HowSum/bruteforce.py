@@ -1,29 +1,17 @@
 
-# INCOMPLETE
-# INCOMPLETE
-# INCOMPLETE
-# INCOMPLETE
-# INCOMPLETE
-# INCOMPLETE
-# INCOMPLETE
-# INCOMPLETE
-# INCOMPLETE
-# INCOMPLETE
-# INCOMPLETE
-# INCOMPLETE
-
-def howsum(target,array,sum=0,l=[]):
+def howsum(target,array,sum=0):
 
     if sum > target:
-        return []
+        return None
     if sum == target:
-        return l
+        return []
     
     for a in array:
-        ans = howsum(target,array,sum+a,l)
-        l.append(a)
-        return ans
-    
+        ans = howsum(target,array,sum+a)
+        if ans != None:
+            ans.append(a)
+            return ans
+
 
 
 print(howsum(5,[1,2]))
