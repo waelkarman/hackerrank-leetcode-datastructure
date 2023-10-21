@@ -1,16 +1,16 @@
 
 
-def cansum(target,array,sum=0):
+def cansum(target,array):
 
-    if sum > target:
+    if target < 0:
         return False
     
-    if sum == target:
+    if target == 0:
         return True
 
     
     for a in array:
-        if True and cansum(target,array,sum+a):
+        if cansum(target-a,array,) :
             return True
     
     return False

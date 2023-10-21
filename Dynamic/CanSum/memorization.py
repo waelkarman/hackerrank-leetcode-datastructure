@@ -1,21 +1,23 @@
 
 
 def cansum(target,array,sum=0,cache={}):
-    if f"{target},{array},{sum}" in cache:
-        return cache[f"{target},{array},{sum}"]
+    if f"{target}" in cache:
+        return cache[f"{target}"]
 
-    if sum > target:
+    if target < 0:
         return False
     
-    if sum == target:
+    if target == 0:
         return True
 
     
     for a in array:
-        cache[f"{target},{array},{sum+a}"] = cansum(target,array,sum+a,cache)
-        if True and cache[f"{target},{array},{sum+a}"]:  
+        ans = cansum(target-a,array,cache)
+        if ans:  
+            cache[f"{target-a}"] = ans
             return True
     
+    cache[f"{target}"] = False
     return False
     
 
