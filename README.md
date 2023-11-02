@@ -7,4 +7,5 @@ Topics:
 - Backtracking<br>
 - Max and Min Heap<br> 
 - Sliding window<br>
-- General problem solving<br>  
+- General problem solving<br>
+- Sorting Algorithms<br>
